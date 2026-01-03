@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Ashim ART</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23FF6D1F%22>💫</text></svg>"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-text">Ashim</span>
+          <span class="logo-subtitle">ART</span>
+        </a>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="toggle-line"></span>
+          <span class="toggle-line"></span>
+          <span class="toggle-line"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+      <div class="hero-background">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="gallery-hero-content">
+        <h1 class="fade-in">Art Gallery</h1>
+        <p class="fade-in">Explore the collection of paintings and plates</p>
+      </div>
+    </section>
+
+    <!-- Painting Process Section -->
+    <section class="painting-process">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Creative Process</h2>
+          <p class="section-subtitle">Behind the scenes of artistic creation</p>
+        </div>
+
+        <!-- Process 1: Peacock Painting -->
+        <div class="process-showcase">
+          <h3 class="process-title">Peacock in Bloom - Creation Journey</h3>
+          <div class="process-grid">
+            <div class="process-item process-peacock-1">
+              <img
+                src="../Assets/painting-1_process_1.jpg"
+                alt="Color Application"
+              />
+              <div class="process-info">
+                <h4>Color Foundation</h4>
+                <p>
+                  Simply apply the colors first to establish the base palette
+                </p>
+              </div>
+            </div>
+            <div class="process-item process-peacock-2">
+              <img
+                src="../Assets/painting-1_process_2.jpg"
+                alt="Full Coloring"
+              />
+              <div class="process-info">
+                <h4>Full Coloring</h4>
+                <p>Coloring the whole painting with detailed brushwork</p>
+              </div>
+            </div>
+            <div class="process-item process-peacock-3">
+              <img
+                src="../Assets/painting-1_process_3.jpg"
+                alt="Final Completion"
+              />
+              <div class="process-info">
+                <h4>Final Completion</h4>
+                <p>
+                  Adding finishing touches to the peacock standing on a tree
+                  branch with pink blossoms and butterflies
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Process 2: 3D Peacock Painting -->
+        <div class="process-showcase">
+          <h3 class="process-title">3D Peacock Fantasy - Step by Step</h3>
+          <div class="process-grid">
+            <div class="process-item process-3d">
+              <img src="../Assets/painting1.jpg" alt="3D Structure Building" />
+              <div class="process-info">
+                <h4>3D Structure Creation</h4>
+                <p>
+                  Establishing 3D structure from clay mixture prepared and
+                  applying on the sketch made on plywood
+                </p>
+              </div>
+            </div>
+            <div class="process-item process-3d">
+              <img src="../Assets/painting2.jpg" alt="Detail Work" />
+              <div class="process-info">
+                <h4>Detail Enhancement</h4>
+                <p>Adding intricate patterns and textures to the 3D surface</p>
+              </div>
+            </div>
+            <div class="process-item process-3d">
+              <img src="../Assets/painting3.jpg" alt="Final Artwork" />
+              <div class="process-info">
+                <h4>Final Artwork</h4>
+                <p>
+                  Completed piece with finishing touches - 3D painting of
+                  peacock with yellowish flowers and pink butterflies
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Works</button>
+          <button class="filter-btn" data-filter="painting">
+            Paintings (15)
+          </button>
+          <button class="filter-btn" data-filter="plate">Plates (9)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-grid">
+          <!-- Paintings (15 items) -->
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="The Mughal Garden of Life"
+            data-description="A classical 'Tree of Life' motif set within an ornate archway, featuring intricate floral patterns and birds inspired by traditional Mughal artistry."
+            data-year="2024"
+            data-medium="Mixed Media on Canvas"
+            data-size="40x60 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-1.jpg"
+              alt="The Mughal Garden of Life"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Mughal Garden of Life</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="Symphony in the Vase"
+            data-description="A stylized flowering tree rising from a decorative vase, featuring symmetrical birds and detailed foliage in soft pastel tones against a dark backdrop."
+            data-year="2024"
+            data-medium="Acrylic & Texture Paste"
+            data-size="45x60 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-2.jpg"
+              alt="Symphony in the Vase"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Symphony in the Vase</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="The Peacock's Perch"
+            data-description="A vibrant relief focusing on a majestic peacock resting amidst lush green leaves and large, colorful blossoms."
+            data-year="2024"
+            data-medium="3D Relief with Acrylic"
+            data-size="50x70 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-3.jpg"
+              alt="The Peacock's Perch"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Peacock's Perch</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="Serenity Under the Bodhi Tree"
+            data-description="A peaceful depiction of Lord Buddha in deep meditation holding a lotus, set against a serene forest landscape filled with golden light."
+            data-year="2024"
+            data-medium="Gold Leaf & Acrylic"
+            data-size="60x80 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-4.jpg"
+              alt="Serenity Under the Bodhi Tree"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Serenity Under the Bodhi Tree</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="The Avian Sanctuary"
+            data-description="An expansive and intricate white-background relief showcasing a sprawling tree teeming with various birds, anchored by a peacock at its roots."
+            data-year="2024"
+            data-medium="Mixed Media Relief"
+            data-size="70x100 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-5.jpg"
+              alt="The Avian Sanctuary"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Avian Sanctuary</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="Midnight Bloom & Guardians"
+            data-description="A striking high-contrast piece featuring a flowering tree on a dark background, flanked by twin peacocks standing guard at the base."
+            data-year="2024"
+            data-medium="Acrylic on Canvas"
+            data-size="50x70 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-6.jpg"
+              alt="Midnight Bloom & Guardians"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Midnight Bloom & Guardians</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="The Divine Melody (Radha & Krishna)"
+            data-description="A romantic and devotional capture of Radha and Krishna, highlighting the intimacy of their bond and the enchanting music of the flute."
+            data-year="2024"
+            data-medium="Traditional Miniature Style"
+            data-size="40x50 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-7.jpg"
+              alt="The Divine Melody (Radha & Krishna)"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Divine Melody (Radha & Krishna)</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="The Sacred Sri Yantra"
+            data-description="A precise and spiritual geometric relief of the Sri Yantra, representing the cosmos and divine energy, surrounded by lotus petals and traditional borders."
+            data-year="2024"
+            data-medium="Geometric Relief with Gold"
+            data-size="60x60 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-8.jpg"
+              alt="The Sacred Sri Yantra"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Sacred Sri Yantra</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="Vighnaharta (The Remover of Obstacles)"
+            data-description="A powerful relief of Lord Ganesha blessing the viewer, flanked by 'Shubh' and 'Labh' (Auspiciousness and Profit), symbolizing good fortune and new beginnings."
+            data-year="2024"
+            data-medium="3D Religious Relief"
+            data-size="50x70 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-9.jpg"
+              alt="Vighnaharta (The Remover of Obstacles)"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">
+                Vighnaharta (The Remover of Obstacles)
+              </h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="The Celestial Dancer (Apsara)"
+            data-description="A graceful female figure, reminiscent of a celestial nymph or Apsara, adorned with jewelry and framed by a vibrant halo of sunflower-like petals and blooms."
+            data-year="2024"
+            data-medium="Relief with Metallic Accents"
+            data-size="45x60 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-10.jpg"
+              alt="The Celestial Dancer (Apsara)"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Celestial Dancer (Apsara)</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="The Goddess's Visage"
+            data-description="A serene close-up relief of a Goddess (resembling Devi), adorned with an intricate jeweled crown and framed by pink lotus blossoms, radiating grace and divinity."
+            data-year="2024"
+            data-medium="Relief Sculpture"
+            data-size="40x50 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-11.jpg"
+              alt="The Goddess's Visage"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Goddess's Visage</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="The Sacred Om Archway"
+            data-description="An elaborate architectural panel featuring scrolling floral vines and red rosettes on a white background, crowned by the sacred 'Om' symbol at the pinnacle."
+            data-year="2024"
+            data-medium="Architectural Relief"
+            data-size="70x100 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-12.jpg"
+              alt="The Sacred Om Archway"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Sacred Om Archway</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="Ardhanarishvara: The Cosmic Union"
+            data-description="A vibrant spiritual depiction of Shiva and Shakti fused as one, representing the balance of masculine and feminine energies, connected by chakras and rooted in the earth."
+            data-year="2024"
+            data-medium="Spiritual Art with Chakras"
+            data-size="60x80 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-13.jpg"
+              alt="Ardhanarishvara: The Cosmic Union"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Ardhanarishvara: The Cosmic Union</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="The Garden of Golden Birds"
+            data-description="A lively and dense composition filled with golden birds perched amidst lush green foliage and large, textured flowers, creating a vibrant nature scene."
+            data-year="2024"
+            data-medium="Gold Leaf & Texture"
+            data-size="80x120 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-14.jpg"
+              alt="The Garden of Golden Birds"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Garden of Golden Birds</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="painting"
+            data-title="The Royal Golden Vines (Diptych)"
+            data-description="A majestic pair of vertical panels featuring intricate gold floral creepers rising within traditional arches set against a deep red background, evoking Mughal grandeur."
+            data-year="2024"
+            data-medium="Gold on Red Background"
+            data-size="100x140 cm (each panel)"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/artwork-15.jpg"
+              alt="The Royal Golden Vines (Diptych)"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Royal Golden Vines (Diptych)</h3>
+              <p class="gallery-category">Painting</p>
+            </div>
+          </div>
+
+          <!-- Plates (9 items) -->
+          <div
+            class="gallery-item fade-in"
+            data-category="plate"
+            data-title="Triad of Birds in Bloom"
+            data-description="A white decorative plate featuring three stylized birds amidst swirling floral vines, all centered around a geometric medallion."
+            data-year="2024"
+            data-medium="Ceramic with Hand Painting"
+            data-size="12 inch diameter"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/plate-1.jpg"
+              alt="Triad of Birds in Bloom"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Triad of Birds in Bloom</h3>
+              <p class="gallery-category">Plate</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="plate"
+            data-title="The Peacock's Garden Tree"
+            data-description="A detailed white plate depicting a blossoming tree of life with two peacocks resting at the roots and vibrant birds perched in the branches."
+            data-year="2024"
+            data-medium="Fine Porcelain"
+            data-size="14 inch diameter"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/plate-2.jpg"
+              alt="The Peacock's Garden Tree"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Peacock's Garden Tree</h3>
+              <p class="gallery-category">Plate</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="plate"
+            data-title="Duo on the Floral Branch"
+            data-description="A clean white plate design showcasing a blue and a red bird resting on a thick, curving branch adorned with large, colorful stylized flowers."
+            data-year="2024"
+            data-medium="Ceramic Art Plate"
+            data-size="10 inch diameter"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/plate-3.jpg"
+              alt="Duo on the Floral Branch"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Duo on the Floral Branch</h3>
+              <p class="gallery-category">Plate</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="plate"
+            data-title="Earth Tones & Avian Life"
+            data-description="A beige-toned plate with a brown ornate rim, illustrating a tree of life scene with peacocks at the base and birds amidst dense foliage."
+            data-year="2024"
+            data-medium="Earthenware with Natural Glaze"
+            data-size="12 inch diameter"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/plate-4.jpg"
+              alt="Earth Tones & Avian Life"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Earth Tones & Avian Life</h3>
+              <p class="gallery-category">Plate</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="plate"
+            data-title="Midnight Floral Serenade"
+            data-description="A striking dark-background plate featuring vivid flowers and two birds perched on winding vines, framed by a decorative brown border."
+            data-year="2024"
+            data-medium="Dark Stoneware"
+            data-size="14 inch diameter"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/plate-5.jpg"
+              alt="Midnight Floral Serenade"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Midnight Floral Serenade</h3>
+              <p class="gallery-category">Plate</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="plate"
+            data-title="Golden Sun & Spiraling Vines"
+            data-description="A radiant yellow plate adorned with three birds and symmetrical floral spirals, anchored by a central rosette medallion."
+            data-year="2024"
+            data-medium="Ceramic with Gold Accents"
+            data-size="12 inch diameter"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/plate-6.jpg"
+              alt="Golden Sun & Spiraling Vines"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Golden Sun & Spiraling Vines</h3>
+              <p class="gallery-category">Plate</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="plate"
+            data-title="The Regal Peacock"
+            data-description="A deep blue plate highlighting a single, majestic peacock in the center, surrounded by intricate floral patterns and green foliage."
+            data-year="2024"
+            data-medium="Cobalt Blue Ceramic"
+            data-size="16 inch diameter"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/plate-7.jpg"
+              alt="The Regal Peacock"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Regal Peacock</h3>
+              <p class="gallery-category">Plate</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="plate"
+            data-title="The Sacred Om Mandala"
+            data-description="A rectangular relief panel featuring a vibrant blue center with the 'Om' symbol, surrounded by elaborate golden scrollwork and jeweled accents."
+            data-year="2024"
+            data-medium="Mixed Media Panel"
+            data-size="30x40 cm"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/plate-8.jpg"
+              alt="The Sacred Om Mandala"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Sacred Om Mandala</h3>
+              <p class="gallery-category">Plate</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item fade-in"
+            data-category="plate"
+            data-title="Harmony of Nature"
+            data-description="A pristine white plate showcasing a symmetrical tree of life with colorful peacocks at the base and bright yellow birds celebrating the bloom."
+            data-year="2024"
+            data-medium="Fine Bone China"
+            data-size="14 inch diameter"
+            data-availability="Available"
+          >
+            <img
+              src="../Assets/plate-9.jpg"
+              alt="Harmony of Nature"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Harmony of Nature</h3>
+              <p class="gallery-category">Plate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Painting Details Modal -->
+    <div class="painting-modal" id="paintingModal">
+      <div class="painting-modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+
+        <div class="modal-container">
+          <div class="modal-image-container">
+            <img src="" alt="" class="modal-image" id="modalImage" />
+            <div class="image-info">
+              <span class="image-size" id="imageSize">40x60 cm</span>
+              <span class="image-material" id="imageMaterial"
+                >Mixed Media on Canvas</span
+              >
+            </div>
+          </div>
+
+          <div class="modal-info">
+            <div class="modal-header">
+              <h2 class="modal-title" id="modalTitle">Painting Title</h2>
+              <p class="modal-category" id="modalCategory">Category</p>
+            </div>
+
+            <div class="modal-details">
+              <div class="detail-item">
+                <h4>Description</h4>
+                <p class="modal-description" id="modalDescription">
+                  A beautiful description of the painting will appear here.
+                </p>
+              </div>
+
+              <div class="detail-row">
+                <div class="detail-item">
+                  <h4>Year</h4>
+                  <p class="modal-year" id="modalYear">2024</p>
+                </div>
+                <div class="detail-item">
+                  <h4>Medium</h4>
+                  <p class="modal-medium" id="modalMedium">
+                    Acrylic & Texture Paste
+                  </p>
+                </div>
+                <div class="detail-item">
+                  <h4>Availability</h4>
+                  <p
+                    class="modal-availability available"
+                    id="modalAvailability"
+                  >
+                    Available
+                  </p>
+                </div>
+              </div>
+
+              <div class="modal-actions">
+                <button class="btn btn-primary" id="inquireBtn">
+                  <i class="fas fa-envelope"></i> Inquire About This Piece
+                </button>
+                <button class="btn btn-outline" id="shareBtn">
+                  <i class="fas fa-share-alt"></i> Share
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Ashim ART</h3>
+            <p>Creating meaningful art that speaks to the soul.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="social-link" title="Pinterest">
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Ashim ART. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/gallery.js"></script>
+  </body>
+</html>
