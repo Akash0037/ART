@@ -130,11 +130,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const title = modalTitle.textContent;
             const description = modalDescription.textContent;
             const url = window.location.href;
-            const shareText = `Check out "${title}" by Ashim ART: ${description.substring(0, 100)}...`;
+            const shareText = `Check out "${title}" by asheem ART: ${description.substring(0, 100)}...`;
             
             if (navigator.share) {
                 navigator.share({
-                    title: `${title} - Ashim ART`,
+                    title: `${title} - asheem ART`,
                     text: shareText,
                     url: url
                 }).catch(err => {

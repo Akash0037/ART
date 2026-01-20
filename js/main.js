@@ -1,4 +1,4 @@
-// Main JavaScript for Ashim ART Website
+// Main JavaScript for asheem ART Website
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
     setActiveNavLink();
