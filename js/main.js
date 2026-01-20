@@ -1,6 +1,7 @@
 // Main JavaScript for Ashim ART Website
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
+    setActiveNavLink();
     initMobileMenu();
     initScrollAnimations();
     initBackToTop();
@@ -37,6 +38,32 @@ function initMobileMenu() {
             }
         });
     }
+}
+
+// Set Active Navigation Link
+function setActiveNavLink() {
+    // Get the current page filename
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    // Get all nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Remove active class from all links
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+    
+    // Add active class to the current page link
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        
+        // Match current page with nav link
+        if (href === currentPage || 
+            (currentPage === '' && href === 'index.html') ||
+            (currentPage === '/' && href === 'index.html')) {
+            link.classList.add('active');
+        }
+    });
 }
 
 // Scroll Animations
@@ -174,6 +201,7 @@ function initFormHandling() {
 
 // Initialize all features
 function initializeAll() {
+    setActiveNavLink();
     initMobileMenu();
     initScrollAnimations();
     initBackToTop();
