@@ -1076,6 +1076,12 @@ section {
   line-height: 1.8;
 }
 
+/* About Content Section */
+.about-content-section {
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  background: var(--bg-white);
+}
+
 /* About Journey Section */
 .about-journey {
   display: grid;
@@ -1289,6 +1295,11 @@ section {
 }
 
 /* Vision Grid */
+.artistic-vision {
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  background: var(--bg-white);
+}
+
 .vision-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
